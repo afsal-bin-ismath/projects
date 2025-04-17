@@ -1,0 +1,32 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 15px;
+}
+
+header h2{
+    margin-bottom: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.4px;
+}
+
+header a {
+    color:rgba(255, 255, 255, 0.841);
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+header a:hover {
+    color: black;
+    background-color: yellow;
+    padding: 8px;
+    border-radius: 1.2rem;
+    transition: all 0.3s ease-in-out;
+}

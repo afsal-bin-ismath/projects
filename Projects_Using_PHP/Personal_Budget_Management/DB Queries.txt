@@ -1,0 +1,116 @@
+--
+-- Database: `signin1db`
+--
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `addexp`
+--
+
+CREATE TABLE `addexp` (
+  `id` int(4) NOT NULL,
+  `expenseid` int(4) NOT NULL,
+  `date` int(4) NOT NULL,
+  `month` varchar(20) NOT NULL,
+  `year` int(4) NOT NULL,
+  `costofitem` int(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+
+--
+-- Table structure for table `expenses`
+--
+
+CREATE TABLE `expenses` (
+  `expenseName` varchar(100) NOT NULL,
+  `Description` varchar(100) NOT NULL,
+  `id` int(4) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+
+--
+-- Table structure for table `month`
+--
+
+CREATE TABLE `month` (
+  `id` int(4) NOT NULL,
+  `month` varchar(20) NOT NULL,
+  `year` int(5) NOT NULL,
+  `budgetamount` int(10) NOT NULL,
+  `description` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+
+--
+-- Table structure for table `tbl1signin`
+--
+
+CREATE TABLE `tbl1signin` (
+  `id` int(4) NOT NULL,
+  `fullName` varchar(100) NOT NULL,
+  `email` varchar(50) NOT NULL,
+  `mobileNumber` int(10) NOT NULL,
+  `Password` varchar(10) NOT NULL,
+  `designation` varchar(50) NOT NULL,
+  `salary` int(100) NOT NULL,
+  `numberofpeopleinhome` int(10) NOT NULL,
+  `emi` int(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `addexp`
+--
+ALTER TABLE `addexp`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `expenses`
+--
+ALTER TABLE `expenses`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `month`
+--
+ALTER TABLE `month`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indexes for table `tbl1signin`
+--
+ALTER TABLE `tbl1signin`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `addexp`
+--
+ALTER TABLE `addexp`
+  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+
+--
+-- AUTO_INCREMENT for table `expenses`
+--
+ALTER TABLE `expenses`
+  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+
+--
+-- AUTO_INCREMENT for table `month`
+--
+ALTER TABLE `month`
+  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+
+--
+-- AUTO_INCREMENT for table `tbl1signin`
+--
+ALTER TABLE `tbl1signin`
+  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+COMMIT;

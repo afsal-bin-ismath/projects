@@ -1,0 +1,41 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-color: #2c3e50; /* Dark blue background */
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    padding: 10px 0;
+    border-radius: 8px;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+}
+
+ul li a:hover {
+    background-color: #e74c3c; /* Red hover effect */
+    color: #fff;
+}
+
+#proj-title{
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+}

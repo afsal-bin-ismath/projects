@@ -1,0 +1,69 @@
+CREATE TABLE `bookeventsdb` (
+  `selectuser` varchar(100) NOT NULL,
+  `selectevent` varchar(100) NOT NULL,
+  `date` date NOT NULL,
+  `startingTime` time(6) NOT NULL,
+  `EndingTime` time(6) NOT NULL,
+  `selectnumberofpeoples` varchar(100) NOT NULL,
+  `foodcatering` varchar(100) NOT NULL,
+  `CateringAmount` varchar(100) NOT NULL,
+  `photography` varchar(100) NOT NULL,
+  `PhotographyAmount` varchar(100) NOT NULL,
+  `Entertainment` varchar(100) NOT NULL,
+  `EntertainmentAmount` varchar(100) NOT NULL,
+  `goodybags` varchar(100) NOT NULL,
+  `GoodyBagsAmount` varchar(100) NOT NULL,
+  `totalamount` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+The server has returned this error message:No database selected
+Error while executing this query:CREATE TABLE `bookinguserdb` (
+  `id` int(4) NOT NULL,
+  `Name` varchar(100) NOT NULL,
+  `AadharNo` varchar(100) NOT NULL,
+  `PhoneNo` varchar(100) NOT NULL,
+  `EmailID` varchar(100) NOT NULL,
+  `Address` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+The server has returned this error message:No database selected
+Error while executing this query:CREATE TABLE `eventdb` (
+  `id` int(4) NOT NULL,
+  `eventname` varchar(100) NOT NULL,
+  `eventType` varchar(100) NOT NULL,
+  `numberofpeople` varchar(100) NOT NULL,
+  `floortype` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+The server has returned this error message:No database selected
+Error while executing this query:INSERT INTO `eventdb` (`id`, `eventname`, `eventType`, `numberofpeople`, `floortype`) VALUES
+(1, 'wedding', 'WEDDING', ' 1500', 'First Floor - 500 sq ft');
+The server has returned this error message:No database selected
+Error while executing this query:CREATE TABLE `registrationdb` (
+  `id` int(4) NOT NULL,
+  `name` varchar(100) NOT NULL,
+  `mobileno` varchar(100) NOT NULL,
+  `email` varchar(100) NOT NULL,
+  `address` varchar(100) NOT NULL,
+  `userName` varchar(100) NOT NULL,
+  `passWord` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+The server has returned this error message:No database selected
+Error while executing this query:INSERT INTO `registrationdb` (`id`, `name`, `mobileno`, `email`, `address`, `userName`, `passWord`) VALUES
+(1, 'john', '1234567892', 'john@gmail.com', 'chennai', 'john123', 'john@123');
+The server has returned this error message:No database selected
+Error while executing this query:ALTER TABLE `bookinguserdb`
+  ADD PRIMARY KEY (`id`);
+The server has returned this error message:No database selected
+Error while executing this query:ALTER TABLE `eventdb`
+  ADD PRIMARY KEY (`id`);
+The server has returned this error message:No database selected
+Error while executing this query:ALTER TABLE `registrationdb`
+  ADD PRIMARY KEY (`id`);
+The server has returned this error message:No database selected
+Error while executing this query:ALTER TABLE `bookinguserdb`
+  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT;
+The server has returned this error message:No database selected
+Error while executing this query:ALTER TABLE `eventdb`
+  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+The server has returned this error message:No database selected
+Error while executing this query:ALTER TABLE `registrationdb`
+  MODIFY `id` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+The server has returned this error message:No database selected
